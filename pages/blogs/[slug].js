@@ -10,7 +10,6 @@ import PreviewAlert from "components/PreviewAlert";
 
 const BlogDetails = ({ blog, preview }) => {
   const router = useRouter();
-  //debugger;
   if (!router.isFallback && !blog?.slug) {
     return <ErrorPage statusCode="404" />;
   }

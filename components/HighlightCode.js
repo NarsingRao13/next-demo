@@ -1,6 +1,8 @@
-import highlight from "highlight.js";
 import { createRef, useEffect } from "react";
+
 import { findDOMNode } from "react-dom";
+
+import highlight from "highlight.js";
 
 const HighlightCode = ({ children, language }) => {
   const code = createRef();
